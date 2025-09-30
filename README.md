@@ -3,7 +3,7 @@ This script automates the transformation of student attendance data from Google 
 
 # Attendance Cleaning Pipeline (Demo)
 
-## 📌 Overview
+## Overview
 This project demonstrates a simple **ETL pipeline** built with **Python**, **Pandas**, and the **Google Sheets API**.  
 
 The script takes raw student attendance data (where attendance dates are stored as comma-separated strings) and restructures it into a **clean, analysis-ready dataset**.  
@@ -20,7 +20,7 @@ The script takes raw student attendance data (where attendance dates are stored 
 
 ---
 
-## 📊 Example Input (Raw Data)
+## Example Input (Raw Data)
 | Student ID | Grade | Present Dates     | Absent Dates | Late Dates |
 |------------|-------|------------------|--------------|------------|
 | 1001       | 5     | 9/1/25, 9/2/25  | 9/3/25       |            |
@@ -28,7 +28,7 @@ The script takes raw student attendance data (where attendance dates are stored 
 
 ---
 
-## 📈 Example Output (Clean Data)
+## Example Output (Clean Data)
 | Student ID | Date     | Status  | Grade |
 |------------|----------|---------|-------|
 | 1001       | 09/01/25 | Present | 5     |
@@ -39,14 +39,14 @@ The script takes raw student attendance data (where attendance dates are stored 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Python**: pandas, gspread, oauth2client  
 - **Google Sheets API** for data extraction and loading  
 - **ETL principles** (Extract → Transform → Load)  
 
 ---
 
-## 🚀 How It Works
+## How It Works
 1. **Extract**: Pulls raw attendance data from Google Sheets (`Raw Data` tab).  
 2. **Transform**: Splits comma-separated date fields into tidy rows and normalizes formats.  
 3. **Load**: Pushes the cleaned dataset into a new Google Sheet (`Cleaned Data` tab).  
